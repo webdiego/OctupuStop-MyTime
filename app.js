@@ -62,6 +62,7 @@ reset.addEventListener('click', e =>{
   milliseconds.textContent = "00" ;
   seconds.textContent = "00 :"  ;
   minutes.textContent =  "00 :";
+  
+  return [ sec = 0 , min = 0, mils=0]
  
-
 })
