@@ -1,0 +1,131 @@
+body{
+  font-family: 'Baloo Tammudu 2', cursive;
+  position: relative;
+  background-color: rgb(245, 240, 240);
+}
+
+.container{
+  height: 100vh;
+}
+
+.container,.timer{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  z-index: 1000;
+ 
+}
+
+.pink{
+  top: -20%;
+  left: -15%;
+  width: 20rem;
+  height: 30rem;
+  transform: rotate(40deg);
+  background-color: rgba(255, 192, 203, 0.397);
+  
+  position: absolute;
+  border-radius: 30px;
+  
+}
+
+.purple{
+  top: -20%;
+  left: 105%;
+  width: 20rem;
+  height: 30rem;
+  transform: rotate(40deg);
+  background-color: rgba(82, 14, 138, 0.157);
+
+  position: absolute;
+  border-radius: 30px;
+
+}
+
+.blue{
+  top: 40%;
+  left: 15%;
+  width: 20rem;
+  height: 30rem;
+  transform: rotate(40deg);
+  background-color: rgba(157, 31, 161, 0.096);
+  z-index: -1;
+
+  position: absolute;
+  border-radius: 80px;
+}
+
+
+img{
+  margin: 2rem;
+  width: 10rem;
+  z-index: 20;
+}
+h1{
+  color: rgb(135, 65, 192);
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: .5rem;
+  transform: rotate(10deg);
+}
+h3{
+  color: rgb(89, 37, 131);
+  margin: 0;
+  text-align: center;
+  letter-spacing: .5rem;
+  font-size: 1.5rem;
+  transform: rotate(10deg);
+}
+ul{
+  display: flex;
+  list-style: none;
+  
+}
+
+
+li{
+  color: rgb(46, 9, 80);
+  width: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+
+
+.milliseconds{
+  margin-left: -17px;
+}
+
+button{
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 1,5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .8rem;
+  text-align: center;
+
+  border-radius: 40px;
+  background-color: rgb(208, 66, 144);
+  border: none;
+  padding: 1rem 1rem 1rem 2rem;
+  z-index: 2000;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px #d4d4d4;
+  
+}
+button:hover{
+  transition: .3s;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 10px #0707073d;
+
+}
+button:active{
+  transition: .7s;
+  transform: translateY( 15px);
+}
