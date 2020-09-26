@@ -66,3 +66,51 @@ reset.addEventListener('click', e =>{
   return [ sec = 0 , min = 0, mils=0]
  
 })
+
+//ANIME IMG
+anime({
+  targets: ' .oct',
+ 
+  
+  scale: {
+    value: 1.7,
+    duration: 600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  
+});
+
+
+anime({
+  targets: 'div .start',
+  translateY: [
+   
+    {value: 200 , duration: 1700},
+    {value: 0 , duration: 1600},
+], 
+  
+});
+anime({
+
+targets: 'div .pause',
+  translateY: [
+   
+    {value: 200 , duration: 1800},
+    {value: 0 , duration: 1800},
+], 
+
+  
+});
+
+anime({
+
+  targets: 'div .reset',
+    translateY: [
+     
+      {value: 200 , duration: 1900},
+      {value: 0 , duration: 2000},
+  ], 
+  
+    
+  });
