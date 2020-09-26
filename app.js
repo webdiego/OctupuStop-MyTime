@@ -92,8 +92,8 @@ anime({
 targets: 'div .pause',
   translateY: [
    
-    {value: 500 , duration: 1800},
-    {value: 0 , duration: 1800},
+    {value: 200 , duration: 1800},
+    {value: 0 , duration: 1900},
 ], 
 
   
