@@ -41,39 +41,13 @@ body{
   
 }
 
-.purple{
-  top: 20%;
-  left: 50%;
-  width: 20rem;
-  height: 30rem;
-  transform: rotate(-40deg);
-  background-color: rgba(82, 14, 138, 0.157);
-
-  position: absolute;
-  border-radius: 30px;
-
-}
-
-.blue{
-  top: 40%;
-  left: 15%;
-  width: 20rem;
-  height: 30rem;
-  transform: rotate(40deg);
-  background-color: rgba(157, 31, 161, 0.096);
-  z-index: -1;
-
-  position: absolute;
-  border-radius: 80px;
-}
-
 
 img{
   margin: 4rem;
   width: 10rem;
   z-index: 20;
   
- animation: opa 2s;
+ animation: opa 4s;
 }
 @keyframes opa {
   from {opacity: 0;}
@@ -134,6 +108,5 @@ button{
   z-index: 2000;
   margin: .6rem;
   cursor: pointer;
-  box-shadow: 5px 5px 15px #d4d4d4;
   
 }

@@ -67,22 +67,17 @@ reset.addEventListener('click', e =>{
  
 })
 
-//ANIME IMG
-anime({
-  targets: ' .oct',
- 
-  opacity: 1,
-   duration: 5000
- 
-  
-});
+
+
+
+
 
 
 anime({
   targets: 'div .start',
   translateY: [
    
-    {value: 200 , duration: 1700},
+    {value: 300 , duration: 1700},
     {value: 0 , duration: 1600},
 ], 
   
@@ -92,7 +87,7 @@ anime({
 targets: 'div .pause',
   translateY: [
    
-    {value: 200 , duration: 1800},
+    {value: 300 , duration: 1800},
     {value: 0 , duration: 1900},
 ], 
 
@@ -104,7 +99,7 @@ anime({
   targets: 'div .reset',
     translateY: [
      
-      {value: 200 , duration: 1900},
+      {value: 300 , duration: 1900},
       {value: 0 , duration: 2000},
   ], 
   
