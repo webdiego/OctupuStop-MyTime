@@ -71,13 +71,9 @@ reset.addEventListener('click', e =>{
 anime({
   targets: ' .oct',
  
-  
-  scale: {
-    value: 1.7,
-    duration: 600,
-    delay: 800,
-    easing: 'easeInOutQuart'
-  },
+  opacity: 1,
+   duration: 5000
+ 
   
 });
 
@@ -96,7 +92,7 @@ anime({
 targets: 'div .pause',
   translateY: [
    
-    {value: 200 , duration: 1800},
+    {value: 500 , duration: 1800},
     {value: 0 , duration: 1800},
 ], 
 
