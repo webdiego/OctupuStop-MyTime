@@ -24,7 +24,7 @@ start.addEventListener('click', e =>{
   function start(){
  
     seconds.textContent = "0" + sec  ;
-    minutes.textContent = "0 " + min + ' :';
+    minutes.textContent = "0" + min + ' :';
     
     if(sec > 9){
       seconds.textContent =  sec ;
@@ -55,7 +55,7 @@ reset.addEventListener('click', e =>{
 
   clearInterval(interval)
  
-  seconds.textContent = "00 :"  ;
+  seconds.textContent = "00 "  ;
   minutes.textContent =  "00 :";
   
   return [ sec = 0 , min = 0]
