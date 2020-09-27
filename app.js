@@ -2,7 +2,7 @@
 //Elements 
 const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
-const milliseconds = document.querySelector('.milliseconds');
+
 
 //Buttons
 const start = document.querySelector('.start');
@@ -22,28 +22,23 @@ let min = '0';
 start.addEventListener('click', e =>{
     
   function start(){
-    milliseconds.textContent = mils  ;
-    seconds.textContent = "0" + sec + ' :' ;
-    minutes.textContent = "0" + min + ' :';
+ 
+    seconds.textContent = "0" + sec  ;
+    minutes.textContent = "0 " + min + ' :';
     
     if(sec > 9){
-      seconds.textContent =  sec + ' :' ;
+      seconds.textContent =  sec ;
     }
     
-    if(mils > 99){
-
-      return  [mils = 00, sec++ ]
-      
-    }
 
     if(sec > 59){
       return [ sec = 00 , min++]
     }
 
-    return  mils ++;
+    return  sec ++;
     
   }
-  interval = setInterval(start ,1);
+  interval = setInterval(start ,1000);
   
 });
 
@@ -59,11 +54,11 @@ pause.addEventListener('click', e =>{
 reset.addEventListener('click', e =>{
 
   clearInterval(interval)
-  milliseconds.textContent = "00" ;
+ 
   seconds.textContent = "00 :"  ;
   minutes.textContent =  "00 :";
   
-  return [ sec = 0 , min = 0, mils=0]
+  return [ sec = 0 , min = 0]
  
 })
 
@@ -72,7 +67,7 @@ reset.addEventListener('click', e =>{
 
 
 
-
+//ANIMATION
 anime({
   targets: 'div .start',
   translateY: [
