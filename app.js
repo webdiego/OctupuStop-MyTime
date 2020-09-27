@@ -30,20 +30,20 @@ start.addEventListener('click', e =>{
       seconds.textContent =  sec + ' :' ;
     }
     
-    if(mils > 60){
+    if(mils > 99){
 
       return  [mils = 00, sec++ ]
       
     }
 
-    if(sec > 60){
+    if(sec > 59){
       return [ sec = 00 , min++]
     }
 
     return  mils ++;
     
   }
-  interval = setInterval(start ,10);
+  interval = setInterval(start ,1);
   
 });
 
