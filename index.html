@@ -10,9 +10,12 @@
 <body>
   
   <div class="container">
-    <img class="oct" src="./img/octupus.png" alt="">
+    <div class="card" >
+
+      <img data-tilt class="oct card" src="./img/octupus.png" alt="">
+    </div>
     
-    <div class="pink"></div>
+    <div  class="pink "></div>
   
     <div class="timer">
       <h1>Stop My Watch</h1>
@@ -38,6 +41,17 @@
 
 
   
+
+  <script type="text/javascript" src="./vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 25,
+      speed: 300
+    });
+    
+    
+  
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script> 
    <script src="./app.js"></script>
 </body>
